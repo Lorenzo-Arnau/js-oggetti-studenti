@@ -43,6 +43,8 @@ var inputAnni = prompt('infine gli anni del nuovo studente');
 studentiList.push(inserisciStudente(inputNome,inputCognome,inputAnni));
 for (var i = 0; i < studentiList.length; i++) {
   console.log(studentiList[i]);
+  console.log(studentiList[i].nome);
+  console.log(studentiList[i].cognome);
 }
 
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
