@@ -1,8 +1,20 @@
 function inserisciStudente(nome,cognome,anni) {
   var stud = {};
-  stud.nome = nome;
-  stud.cognome = cognome;
-  stud.eta = anni;
+  if (nome.length < 4 || !isNaN(nome)) {
+  alert('nome non valido');
+  }else {
+    stud.nome = nome;
+  }
+  if (cognome.length < 4 || !isNaN(nome)) {
+    alert('cognome non valido');
+  }else {
+    stud.cognome = cognome;
+  }
+  if (isNaN(anni)) {
+    alert('anni non valido');
+  }else {
+    stud.eta = anni;
+  }
   return stud;
 }
 // Creare un oggetto che descriva uno studente con le seguenti proprietà: nome, cognome e età. Stampare a schermo attraverso il for tutte le proprietà.
